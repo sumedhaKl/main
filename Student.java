@@ -45,14 +45,28 @@ public class Student {
         year >= 1 && year <= 5;
     }
     public String getYearInString() {
-        return switch (year) {
-            case 1 -> "Freshman";
-            case 2 -> "Sophomore";
-            case 3 -> "Junior";
-            case 4 -> "Senior";
-            case 5 -> "Graduate";
-            default -> "Unknown";
-        };
+        String yearString;
+        switch (year) {
+            case 1: 
+                yearString = "Freshman";
+                break;
+            case 2: 
+                yearString = "Sophomore";
+                break;
+            case 3: 
+                yearString = "Junior";
+                break;
+            case 4: 
+                yearString = "Senior";
+                break;
+            case 5: 
+                yearString = "Graduate";
+                break;
+            default: 
+                yearString = "Unknown";
+                break;
+        }
+        return yearString;
     }
     @Override
     public String toString() {
