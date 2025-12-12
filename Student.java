@@ -4,11 +4,11 @@ public class Student {
     private double pointGrade;
     private int year;
 
-    public student() {
+    public Student() {
         
     }
 
-    public student(String name, long ID, double pointGrade, int year) {
+    public Student(String name, long ID, double pointGrade, int year) {
         this.name = name;
         this.ID = ID;
         this.pointGrade = pointGrade;
